@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Inter-sb";
+    src: url(../../assets/fonts/Inter_28pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Inter-bold";
+    src: url(../../assets/fonts/Inter_28pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Inter-black";
+    src: url(../../assets/fonts/Inter_18pt-Black.ttf);
+}
+
+@font-face {
+    font-family: "Inter-md";
+    src: url(../../assets/fonts/Inter_18pt-Medium.ttf);
+}
+
+
+:root {
+    --color-gray: #475569;
+    --bgc-green: #2C5926;
+    --color-green: #2C5926;
+}
+
+
+.h-gray {
+    color: var(--color-gray);
+}
+
+.bgc-green {
+    background-color: var(--bgc-green);
+}
+
+.color-green {
+    color: var(--color-green);
+}
+
+nav {
+    font-family: "Inter-sb";
+
+}
+
+.search-box {
+    position: relative;
+    width: 209px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Input o'lchami */
+.my-search-input {
+    width: 209px;
+    /* yangi width */
+    height: 56px;
+    /* yangi height */
+    padding: 0 40px;
+    /* chap/ o‘ng icon uchun joy */
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background-color: #f2f4f1;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Placeholder rangi */
+.my-search-input::placeholder {
+    color: #999;
+}
+
+/* Search icon */
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.btn-login {
+    color: #334155;
+    border: none;
+    width: 85px;
+    height: 40px;
+    background-color: transparent;
+    font-family: "Inter-bold";
+}
+
+.btn-signup {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-family: "Inter-bold";
+}
+
+@media (max-width: 992px) {
+
+    nav,
+    .btn-login,
+    .btn-signup {
+        font-size: 13px;
+    }
+}
+
+/* Hamburger icon */
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: #334155;
+    position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #334155;
+    transition: all 0.3s;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px;
+}
+
+.navbar-toggler-icon::after {
+    bottom: -8px;
+}
+
+/* Mobile menu spacing */
+@media (max-width: 767px) {
+    .nav-link {
+        padding: 10px 0;
+    }
+}
+
+/* HERO! */
+
+
+.hero {
+    padding-top: 150px;
+}
+
+.trade-box {
+    font-family: "Inter-bold";
+    width: 260px;
+    height: 28px;
+    border-radius: 10px;
+    background-color: #E2E8F0;
+}
+
+.hero-title {
+    color: #0F172A;
+    font-size: 72px;
+    font-family: "Inter-black";
+}
+
+.hero-text {
+    color: #475569;
+    font-family: "Inter-md";
+}
+
+.btn-join {
+    width: 221px;
+    height: 70px;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    font-family: "Inter-bold";
+}
+
+.btn-find {
+    width: 221px;
+    height: 70px;
+    border-radius: 50px;
+    color: #0F172A;
+    border: 1px solid #E2E8F0;
+    font-family: "Inter-bold";
+    background-color: #fff;
+}
+
+.hero-right {
+    background-image: url(../../assets/imgs/HeroImg.svg);
+    width: 700px;
+    height: 480px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
