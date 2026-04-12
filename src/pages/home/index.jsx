@@ -7,7 +7,9 @@ import RightArrowIcon from "../../assets/imgs/right-arrow.svg";
 import GrassImg from "../../assets/imgs/grass.svg";
 import TransleteImg from "../../assets/imgs/transleteImg.svg";
 import DirectImg from "../../assets/imgs/DirectImg.svg";
+import GlobalImgG from "../../assets/imgs/globalImgG.svg"
 import GlobalImg from "../../assets/imgs/globalImg.svg";
+import EthernetImg from "../../assets/imgs/EthernetImg.svg";
 
 export const Home = () => {
   const [query, setQuery] = useState("");
@@ -21,7 +23,8 @@ export const Home = () => {
 
   return (
     <section>
-      <header className="header d-none">
+      {/* Header */}
+      <header className="header">
         <div className="container">
           <div className="d-flex align-items-center justify-content-between py-2">
             <div className="header-left d-flex align-items-center">
@@ -139,7 +142,8 @@ export const Home = () => {
         </div>
       </header>
 
-      <section className="hero d-none">
+      {/* Hero */}
+      <section className="hero">
         <div className="container">
           <div className="hero-inner flex-wrap flex-xl-nowrap d-xl-flex align-items-center justify-content-xl-between justify-content-center">
             <div className="hero-left col-xl-5 col-12 d-flex justify-content-xl-start justify-content-center flex-wrap">
@@ -186,7 +190,8 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="export-sec d-none">
+      {/* Export Section */}
+      <section className="export-sec">
         <div className="container">
           <div className="export-sec-inner">
             <div className="export-top d-flex justify-content-center flex-wrap">
@@ -236,7 +241,7 @@ export const Home = () => {
 
               <div className="export-card d-flex flex-wrap p-4">
                 <div className="col-12 mt-4">
-                  <img src={GlobalImg} alt="Global" />
+                  <img src={GlobalImgG} alt="Global" />
                 </div>
                 <p className="export-card-subtitle mt-0 mb-0 mb-0">
                   Global Buyers
@@ -251,7 +256,8 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="stats-sec d-none ">
+      {/* Stats Section */}
+      <section className="stats-sec d-none d-md-flex">
         <div className="container">
           <div className="stats-inner bgc-green d-flex align-items-center justify-content-around">
             <div className="active-box text-center">
@@ -277,15 +283,8 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="cta-sec">
-        <div className="container">
-          <div className="cta-sec-inner">
-            
-          </div>
-        </div>
-      </section>
-
-      <section className="stats-mobile bgc-green d-block d-md-none">
+      {/* Stats section mobile */}
+      <section className="stats-mobile bgc-green d-block d-md-none mt-5">
         <div className="stats-m-inner p-4">
           <div className="stats-m-top d-flex align-items-center justify-content-around">
             <div>
@@ -298,8 +297,6 @@ export const Home = () => {
               <p className="stats-m-text m-0 text-center">Verified Sellers</p>
             </div>
           </div>
-
-
 
           <div className="stats-m-bottom d-flex align-items-center justify-content-around mt-4">
             <div>
@@ -314,6 +311,122 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA section */}
+      <section className="cta-sec pt-5 pb-5">
+        <div className="container">
+          <div className="cta-sec-inner text-center d-none d-md-block pt-5 mt-3 pb-5">
+            <h5 className="cta-subtitle mb-4">Ready to expand your market?</h5>
+            <p className="cta-text mb-4">
+              Join the waitlist to get early access to our AI market prediction
+              tools.
+            </p>
+            <form action="#">
+              <input
+                className="cta-input p-4"
+                placeholder="Enter your email address"
+                type="email"
+                required
+              />
+              <button className="cta-btn ms-3" type="submit">
+                Get Started
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <div className="footer-inner">
+          <div className="footer-top d-flex align-items-center justify-content-between pb-5 p-5">
+            <div className="footer-t-left col-lg-3 col-12 d-flex flex-wrap justify-content-center text-center text-lg-start justify-content-lg-start">
+              <img src={HeaderLogo} alt="Agro" />
+              <p className="footer-text mt-3">
+                Empowering farmers and producers to reach global markets through
+                advanced artificial intelligence and secure trade protocols.
+              </p>
+              <div className="d-flex align-items-center gap-4">
+                <img src={GlobalImg} alt="Global" />
+                <img src={EthernetImg} alt="Ethernet" />
+              </div>
+            </div>
+
+            <div className="footer-t-right d-flex align-items-center justify-content-center col-9">
+              <ul className="footer-ul d-flex flex-column gap-lg-3">
+                <li className="list-group-item">
+                  <p className="footer-ul-text">PLATFORM</p>
+                </li>
+
+                <li className="footer-li list-group-item">
+                  <NavLink className="text-decoration-none">
+                    MarketPlace
+                  </NavLink>
+                </li>
+                <li className="footer-li list-group-item">
+                  <NavLink className="text-decoration-none">
+                    Logistics AI
+                  </NavLink>
+                </li>
+
+                <li className="footer-li list-group-item">
+                  <NavLink className="text-decoration-none">Insurance</NavLink>
+                </li>
+              </ul>
+
+              <ul className="footer-ul d-flex flex-column gap-lg-3">
+                <li className="list-group-item">
+                  <p className="footer-ul-text">COMPANY</p>
+                </li>
+
+                <li className="footer-li list-group-item">
+                  <NavLink className="text-decoration-none">About Us</NavLink>
+                </li>
+                <li className="footer-li list-group-item">
+                  <NavLink className="text-decoration-none">
+                    Sustainability
+                  </NavLink>
+                </li>
+
+                <li className="footer-li list-group-item">
+                  <NavLink className="text-decoration-none">Careers</NavLink>
+                </li>
+              </ul>
+
+              <ul className="footer-ul d-flex flex-column gap-lg-3">
+                <li className="list-group-item">
+                  <p className="footer-ul-text">Legal</p>
+                </li>
+
+                <li className="footer-li list-group-item">
+                  <NavLink className="text-decoration-none">Privacy </NavLink>
+                </li>
+
+                <li className="footer-li list-group-item">
+                  <NavLink className="text-decoration-none">Terms</NavLink>
+                </li>
+
+                <li className="footer-li list-group-item">
+                  <NavLink className="text-decoration-none">Compliance</NavLink>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="footer-bottom d-flex justify-content-between align-items-center p-5">
+            <div>
+              <p className="footer-copyright">
+                © 2024 AgroExport AI. All rights reserved.
+              </p>
+            </div>
+
+            <div className="d-flex align-items-center gap-4">
+              <p className="footer-b-text">Security</p>
+              <p className="footer-b-text">Status</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
   );
 };
